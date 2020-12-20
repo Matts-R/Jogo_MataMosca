@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch Flies</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../Style/game_over.css">
+
+  <script src="Scripts/index.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <img src="../Images/game.png" alt="game_over">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <div class="mb-2">
+            <select id="difficulty" class="form-control" required>
+              <Option selected hidden value="">Choose your difficulty</Option>
+              <Option value="easy">Easy (C'mon, you are better than this)</Option>
+              <Option value="hard"> Hard (In this game doesn't exist medium difficulty, it's all or nothing)</Option>
+              <Option value="impossible">Impossible (Dude, no joke, it's really impossible)</Option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <button type="button" id="startGame" class="btn btn-danger btn-lg">Start
+            Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
